@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultural Heritage Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <div class="logo-3d" id="logoContainer"></div>
+            <span>Cultural Heritage</span>
+        </div>
+        <div class="nav-links">
+            <div class="nav-item">
+                <span>Dance</span>
+                <div class="submenu">
+                    <a href="./dance.html">Classical Dance</a>
+                    <a href="./dance.html">Folk Dance</a>
+                    <a href="./dance.html">Tribal Dance</a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <span>Festivals</span>
+                <div class="submenu">
+                    <a href="./festivals.html">Spring Festivals</a>
+                    <a href="./festivals.html">Harvest Festivals</a>
+                    <a href="./festivals.html">Winter Festivals</a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <span>Regional Arts</span>
+                <div class="submenu">
+                    <a href="./Regional Arts.html">Traditional Paintings</a>
+                    <a href="./Regional Arts.html">Sculptures</a>
+                    <a href="./Regional Arts.html">Traditional Crafts</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Discover Our Rich Cultural Heritage</h1>
+                <p>Explore the vibrant tapestry of traditions, arts, and celebrations</p>
+            </div>
+            <div id="hero3D" class="hero-3d"></div>
+        </section>
+
+        <!-- Dance Section -->
+        <section id="classical" class="content-section">
+            <h2>Classical Dance</h2>
+            <div class="cards-container">
+                <div class="card" style="--bg-image: url('https://images.unsplash.com/photo-1503516459261-40c66117780a?auto=format&fit=crop&q=80')">
+                    <div class="card-content">
+                        <h3>Bharatanatyam</h3>
+                        <p>Ancient classical dance from Tamil Nadu, known for its grace and sculptural poses</p>
+                    </div>
+                </div>
+                <div class="card" style="--bg-image: url('https://images.unsplash.com/photo-1583318432730-a19c89692612?auto=format&fit=crop&q=80')">
+                    <div class="card-content">
+                        <h3>Kathak</h3>
+                        <p>North Indian classical dance characterized by fluid movements and intricate footwork</p>
+                    </div>
+                </div>
+                <div class="card" style="--bg-image: url('https://images.unsplash.com/photo-1547153760-0c61c1b44b19?auto=format&fit=crop&q=80')">
+                    <div class="card-content">
+                        <h3>Odissi</h3>
+                        <p>Classical dance from Odisha with unique tribhanga posture</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        -->
+
+        <!-- Festivals Section -->
+        <section id="spring" class="content-section">
+            <h2>Spring Festivals</h2>
+            <div class="cards-container">
+                <div class="card" style="--bg-image: url('https://images.unsplash.com/photo-1604429868519-8a64cb3b010b?auto=format&fit=crop&q=80')">
+                    <div class="card-content">
+                        <h3>Holi</h3>
+                        <p>Festival of colors celebrating the arrival of spring</p>
+                    </div>
+                </div>
+                <div class="card" style="--bg-image: url('https://images.unsplash.com/photo-1621951753015-740c699ab970?auto=format&fit=crop&q=80')">
+                    <div class="card-content">
+                        <h3>Baisakhi</h3>
+                        <p>Harvest festival of Punjab marking the solar new year</p>
+                    </div>
+                </div>
+                <div class="card" style="--bg-image: url('https://images.unsplash.com/photo-1602863211758-e35b50a89483?auto=format&fit=crop&q=80')">
+                    <div class="card-content">
+                        <h3>Ugadi</h3>
+                        <p>New Year festival celebrated in South India</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Regional Arts Section -->
+        <section id="paintings" class="content-section">
+            <h2>Traditional Paintings</h2>
+            <div class="cards-container">
+                <div class="card" style="--bg-image: url('https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?auto=format&fit=crop&q=80')">
+                    <div class="card-content">
+                        <h3>Madhubani</h3>
+                        <p>Folk painting style from Bihar known for geometric patterns</p>
+                    </div>
+                </div>
+                <div class="card" style="--bg-image: url('https://images.unsplash.com/photo-1578321272176-b7bbc0679853?auto=format&fit=crop&q=80')">
+                    <div class="card-content">
+                        <h3>Warli</h3>
+                        <p>Tribal art form using basic geometric shapes</p>
+                    </div>
+                </div>
+                <div class="card" style="--bg-image: url('https://images.unsplash.com/photo-1569091791842-7cfb64e04797?auto=format&fit=crop&q=80')">
+                    <div class="card-content">
+                        <h3>Tanjore</h3>
+                        <p>Classical South Indian painting style with gold leaf work</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="chatbot-widget" id="chatbot">
+        <div class="chatbot-header">
+            <span>Cultural Guide</span>
+            <button id="toggleChat">×</button>
+        </div>
+        <div class="chat-messages" id="chatMessages"></div>
+        <div class="chat-input">
+            <input type="text" id="userInput" placeholder="Ask about our culture...">
+            <button id="sendMessage">Send</button>
+        </div>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
