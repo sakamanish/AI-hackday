@@ -12,12 +12,21 @@ body {
     background-size: cover; /* Ensures the image covers the entire background */
     background-position: center; /* Centers the image */
     background-attachment: fixed; /* Keeps the background fixed during scrolling */
+    background-repeat: no-repeat; /* Prevents image repetition */
     width: 100%;
     height: 100vh;
     margin: 0;
     padding: 0;
     color: var(--text-color); /* Set text color */
 }
+
+/* Optional: You can add media queries for specific screen sizes if needed */
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll; /* For smaller screens, remove the fixed background effect */
+    }
+}
+
 
 * {
     box-sizing: border-box;
