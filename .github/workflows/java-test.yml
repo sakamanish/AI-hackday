@@ -1,4 +1,4 @@
-name: Java Add Numbers
+name: Testing java
 
 on:
   push:
