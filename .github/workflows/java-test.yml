@@ -2,9 +2,11 @@ name: Testing java
 
 on:
   push:
-    branches: [main]
+    branches:
+      - '**'     # means all branches
   pull_request:
-    branches: [main]
+    branches:
+      - '**'     # all PRs targeting any branch
 
 jobs:
   build-and-run:
